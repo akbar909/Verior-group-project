@@ -1,8 +1,8 @@
 import React from 'react'
-
+import About from './pages/About'
 const App = () => {
   return (
-    <div className='text-green-400 text-5xl'>App</div>
+    <About/>
   )
 }
 
