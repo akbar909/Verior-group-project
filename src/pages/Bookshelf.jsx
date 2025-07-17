@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeToggle from '../components/ThemeToggle';
 
 const bookCovers = [
   '/src/assets/books/book1.png',
@@ -33,14 +34,13 @@ const bookCovers = [
 
 const Bookshelf = () => {
   return (
-    <div className="min-h-screen bg-black text-white px-4 py-12 md:px-12">
+    <div className="min-h-screen bg-white text-black dark:bg-[#09090b] dark:text-white px-4 py-12 md:px-12 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Bookshelf</h1>
-        <p className="text-gray-400 mb-12 text-lg">
+        <p className="text-gray-600 dark:text-gray-400 mb-12 text-lg">
           Books and pieces of wisdom I’ve enjoyed reading.
         </p>
 
-        {/* ✅ 4 columns max */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {bookCovers.map((src, index) => (
             <div
@@ -56,6 +56,7 @@ const Bookshelf = () => {
           ))}
         </div>
       </div>
+      <ThemeToggle />
     </div>
   );
 };
