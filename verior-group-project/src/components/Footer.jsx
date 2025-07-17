@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* Mobile Bottom Navigation */}
+
       <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95vw] max-w-[510px] md:hidden flex justify-center backdrop-blur-sm">
         <div className="flex w-full justify-between items-center bg-[#18181D4D] dark:bg-[#18181D99] rounded-2xl px-3 py-2 shadow-xl backdrop-blur-md border border-[#23232a]/20">
           <a
