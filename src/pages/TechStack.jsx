@@ -66,14 +66,19 @@ const gamesStack = [
 
 const CardGrid = ({ title, items }) => (
   <>
-    <h2 className="text-2xl md:text-3xl font-bold text-gray-500 dark:text-gray-400 mb-6 mt-16">
-      {title}
-    </h2>
+    <h2
+  className="text-2xl md:text-3xl font-bold mb-6 mt-16 text-[#C5C5C5] dark:text-[#808080]"
+>
+  {title}
+</h2>
+
+
     <div className="flex flex-wrap justify-center gap-6">
       {items.map((item, index) => (
         <div
           key={index}
-          className="bg-gray-100 dark:bg-[#1a1a1a] w-[358px] h-[86px] md:w-[330px] md:h-[300px] rounded-2xl p-4 md:p-6 hover:scale-105 transition-transform duration-300 flex flex-row md:flex-col items-center md:justify-between"
+          className="w-[358px] h-[86px] md:w-[330px] md:h-[300px] rounded-2xl p-4 md:p-6 hover:scale-105 transition-transform duration-300 flex flex-row md:flex-col items-center md:justify-between
+            bg-[#F3F3F3] border border-[#EBEBEB] dark:bg-[#181818] dark:border-[#383737]"
         >
           <div className="flex-shrink-0 md:flex-1 flex items-center justify-center md:justify-center">
             <img
@@ -85,7 +90,7 @@ const CardGrid = ({ title, items }) => (
           <div className="ml-4 md:ml-0 mt-0 md:mt-6 flex flex-row items-center justify-between w-full gap-2">
             <h3 className="text-base md:text-lg font-semibold">{item.name}</h3>
             {(title === 'Dev & Design' || title === 'Apps') && item.label && (
-              <span className="text-xs text-gray-600 dark:text-gray-400 bg-gray-200 dark:bg-[#111] px-3 py-1 rounded-full border border-gray-300 dark:border-gray-700">
+              <span className="text-xs bg-[#ffffff]/70 border border-[#ffffff]/70 text-[#808080] px-3 py-1 rounded-full dark:text-[#808080] dark:bg-[#181818] dark:border-[#272525]">
                 {item.label}
               </span>
             )}
@@ -104,7 +109,7 @@ const TechStack = () => {
           <ThemeToggle />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Tech Stack</h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-12 text-lg">
+        <p className="text-lg mb-12 text-[#808080]/50 dark:text-[#808080]/50">
           The dev tools, apps, devices, and games I use and play.
         </p>
 
