@@ -13,10 +13,10 @@ const Hero = () => {
       <div>
         <Header />
       </div>
-      <div className="mt-72 px-4 md:px-32 lg:px-8 xl:px-36 2xl:px-64 flex flex-row items-center container">
+      <div className=" mt-72 md:mt-40 px-4 md:px-8  xl:px-36 2xl:px-64 flex flex-row items-center container">
         <div>
         <div className="flex flex-col gap-4">
-          <h1 className="text-5xl font-extrabold text-[#808080] ">
+          <h1 className="text-5xl lg:text-7xl font-extrabold text-[#808080] ">
             Hi 👋{" "}
             <span>
               {" "}
@@ -25,7 +25,7 @@ const Hero = () => {
             <span>I’m</span>{" "}
             <span className="text-[#181818] dark:text-white">Eihab Khan</span>{" "}
           </h1>
-          <p className="leading-5 text-[#808080] font-medium">
+          <p className="leading-5 text-[#808080] font-medium text-[15px] lg:text-2xl">
             I am a front-end engineer and UI/UX designer helping startups turn
             their visions into a digital reality. I specialize in designing and
             building modern mobile and web-based apps.
@@ -44,7 +44,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Hero"
-          className="rounded-t-full shadow-lg hidden lg:block w-[388px] h-[300px]"
+          className="rounded-t-full shadow-lg hidden lg:block w-[540px] h-[300px] object-cover"
         />
         </div>
       </div>

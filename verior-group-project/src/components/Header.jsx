@@ -100,7 +100,7 @@ const Header = () => {
           </a>
           <a href="https://x.com" target="_blank" className="">
               <img src={xlogo} alt="x" className="w-6 h-6" />
-           
+          
           </a>
           <a href="https://github.com" target="_blank" className="">
           {
