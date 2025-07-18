@@ -1,6 +1,7 @@
 import React from 'react';
-// import ThemeToggle from '../components/ThemeToggle';
-
+import HeaderGradient from "../assets/HeaderGradient.png";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const bookCovers = [
   '/src/assets/books/book1.png',
   '/src/assets/books/book2.jpg',
@@ -34,7 +35,20 @@ const bookCovers = [
 
 const Bookshelf = () => {
   return (
-    <div className="min-h-screen bg-white text-black dark:bg-[#09090b] dark:text-white px-4 py-12 md:px-12 transition-colors duration-300">
+    <section
+    style={{
+        backgroundImage: `url(${HeaderGradient})`,
+        backgroundPosition: "top center",
+				 backgroundSize: "100% 600px",
+        
+      }}
+      className={`bg-[#fbfbfb] dark:bg-[#131313] flex-1 flex flex-col items-center justify-center text-gray-900 dark:text-white bg-[center_top] lg:bg-[left_top] bg-no-repeat bg-cover`}
+    >
+      <div>
+        <Header />
+      </div>
+
+    <div className="min-h-screen mb-6  text-black  dark:text-white mt-20 md:mt-32 px-4 md:px-8  xl:px-36 2xl:px-64 transition-colors ">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-2">Bookshelf</h1>
        <p className="text-customgray50 mb-12 text-lg">
@@ -47,19 +61,20 @@ const Bookshelf = () => {
           {bookCovers.map((src, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded shadow-lg hover:scale-105 transition-transform duration-300"
+              className="overflow-hidden rounded shadow-lg hover:scale-105 transition-transform "
             >
               <img
                 src={src}
                 alt={`Book ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-[170px] h-[263px] md:w-full lg:w-[215px] md:h-full lg:h-[333px] object-cover"
               />
             </div>
           ))}
         </div>
       </div>
-      {/* <ThemeToggle /> */}
     </div>
+    <Footer />
+    </section>
   );
 };
 

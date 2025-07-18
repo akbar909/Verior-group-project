@@ -2,12 +2,24 @@
 import ProjectData from '../components/ProjectsData'
 import Frames from '../assets/Frames'
 import Stars from '../assets/Stars.png'
-
+import HeaderGradient from "../assets/HeaderGradient.png";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const Projects = () => {
   return (
-    <section className=" min-h-screen dark:bg-[#0D0D0D] bg-[#F6F6F6] dark:text-white px-6 py-16 md:px-24">
-       
-      <div className="max-w-6xl ">
+    <section 
+    style={{
+        backgroundImage: `url(${HeaderGradient})`,
+        backgroundPosition: "top center",
+				 backgroundSize: "100% 600px",
+        
+      }}
+      className={`bg-[#fbfbfb] dark:bg-[#131313] flex-1 flex flex-col items-center justify-center text-gray-900 dark:text-white bg-[center_top] lg:bg-[left_top] bg-no-repeat bg-cover`}
+    >
+      <div>
+        <Header />
+      </div>
+      <div className="mt-20 md:mt-32 px-4 md:px-8  xl:px-36 2xl:px-64  items-center mb-6 container">
         <h2 className="text-4xl md:text-5xl font-bold mb-2">Projects</h2>
         <p className="text-[#80808080] text-lg mb-12">Projects and ideas I’ve worked on</p>
  <div className="relative mb-12">
@@ -56,6 +68,7 @@ const Projects = () => {
             </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

@@ -35,16 +35,18 @@ const Header = () => {
       <nav
         className="flex items-center justify-between w-full h-auto p-2 md:bg-white/25 md:dark:bg-[#18181d]/30 md:mx-auto mt-8 md:w-[700px] lg:w-[1000px] md:transition-all md:duration-300 md:ease-in-out md:h-[60px] md:rounded-xl md:p-4 md:backdrop-blur-md"
       >
-
+        
         <div className="bg-none flex items-center gap-10">
-          {theme === 'dark' ? (
-            <img src={logoDark} alt="Logo" className="w-[39.87px] h-[26px]" />
-          ) : ( 
-            <>
-            <img src={logo} alt="Logo" className="w-[39.87px] h-[26px] hidden md:flex" />
+          <Link to="/" className="flex items-center">
+            {theme === 'dark' ? (
+              <img src={logoDark} alt="Logo" className="w-[39.87px] h-[26px]" />
+            ) : (
+              <>
+                <img src={logo} alt="Logo" className="w-[39.87px] h-[26px] hidden md:flex" />
             <img src={logoDark} alt="Logo" className="w-[39.87px] h-[26px] md:hidden" />
             </>
           )}
+          </Link>
        
         <div className="hidden md:flex items-center gap-6 lg:gap-10 font-medium text-[#181818]  dark:text-[#c5c5c5]">
           {menu.map((item) =>

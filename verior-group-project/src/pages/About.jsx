@@ -1,9 +1,23 @@
 import Signature from '../assets/Signature';
 import Shape from '../assets/Shape';
-
+import Header from '../components/Header';
+import HeaderGradient from "../assets/HeaderGradient.png";
+import Footer from '../components/Footer';
 const About = () => {
   return (
-    <div className=" dark:bg-[#0D0D0D] bg-[#0000000] dark:text-gray-400 text-gray-500 px-8 py-10 md:px-24">
+    <section
+     style={{
+            backgroundImage: `url(${HeaderGradient})`,
+             backgroundPosition: "top center",
+        backgroundSize: "100% 600px",
+          
+          }}
+          className={`bg-[#fbfbfb] dark:bg-[#131313] flex-1 flex flex-col items-center justify-center text-gray-900 dark:text-white bg-[center_top] lg:bg-[left_top] bg-no-repeat bg-cover`}
+        >
+          <div>
+            <Header />
+          </div>
+    <div className="min-h-screen mt-20 md:mt-32 dark:text-gray-400 text-gray-500 px-8 py-10 md:px-24 container">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white text-black">A little bit about me</h1>
         <p className="dark:text-gray-400 text-black font-bold text-lg mb-12">Who I am and what I do.</p>
@@ -67,6 +81,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </section>
   );
 };
 

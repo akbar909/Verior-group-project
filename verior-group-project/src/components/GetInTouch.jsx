@@ -1,4 +1,5 @@
 import { SendHorizontal } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const GetInTouch = () => {
   return (
@@ -14,13 +15,13 @@ const GetInTouch = () => {
           </p>
         </div>
         <div className="w-full md:w-auto flex justify-center md:justify-end mt-6 md:mt-0">
-          <a
-            href="#contact"
-            className="flex items-center justify-center gap-2 w-full md:w-auto px-8 py-4 bg-[#131313] dark:bg-[#1A1A1A] text-white  rounded-[9px] font-medium text-lg  shadow-md hover:bg-[#23232a] dark:hover:bg-[#e5e5e5] transition-all border border-transparent"
+          <Link
+            to="/contact"
+            className="flex items-center justify-center gap-2 w-full md:w-auto px-8 py-4 bg-[#131313] dark:bg-[#1A1A1A] text-white  rounded-[9px] font-medium text-lg  shadow-md  transition-all border border-transparent"
           >
             <SendHorizontal className="w-5 h-5" />
             Get in touch
-          </a>
+          </Link>
         </div>
       </div>
     </section>

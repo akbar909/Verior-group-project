@@ -1,6 +1,7 @@
 import React from 'react';
-// import ThemeToggle from '../components/ThemeToggle';
-
+import HeaderGradient from "../assets/HeaderGradient.png";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const techStack = [
   { name: 'Figma', icon: '/src/assets/tech/figma.png', label: 'Design' },
   { name: 'Next.js', icon: '/src/assets/tech/nextjs.jpg', label: 'Web Framework' },
@@ -67,7 +68,7 @@ const gamesStack = [
 const CardGrid = ({ title, items }) => (
   <>
     <h2
-  className="text-2xl md:text-3xl font-bold mb-6 mt-16 text-[#C5C5C5] dark:text-[#808080]"
+  className="text-2xl md:text-3xl font-bold mb-6 mt-16 px-4 md:px-16 text-[#C5C5C5] dark:text-[#808080]"
 >
   {title}
 </h2>
@@ -77,7 +78,7 @@ const CardGrid = ({ title, items }) => (
       {items.map((item, index) => (
         <div
           key={index}
-          className="w-[358px] h-[86px] md:w-[330px] md:h-[300px] rounded-2xl p-4 md:p-6 hover:scale-105 transition-transform duration-300 flex flex-row md:flex-col items-center md:justify-between
+          className="w-[358px] h-[86px] md:w-[330px] md:h-[300px] rounded-2xl p-4 md:p-6 hover:scale-105  flex flex-row md:flex-col items-center md:justify-between
             bg-[#F3F3F3] border border-[#EBEBEB] dark:bg-[#181818] dark:border-[#383737]"
         >
           <div className="flex-shrink-0 md:flex-1 flex items-center justify-center md:justify-center">
@@ -103,13 +104,21 @@ const CardGrid = ({ title, items }) => (
 
 const TechStack = () => {
   return (
-    <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white px-4 py-12 md:px-12 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-end md:justify-end mb-6">
-          {/* <ThemeToggle /> */}
-        </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-2">Tech Stack</h1>
-        <p className="text-lg mb-12 text-[#808080]/50 dark:text-[#808080]/50">
+    <section
+      style={{
+        backgroundImage: `url(${HeaderGradient})`,
+        backgroundPosition: "top center",
+        backgroundSize: "100% 600px",
+      }}
+      className={`bg-[#fbfbfb] dark:bg-[#131313] flex-1 flex flex-col items-center justify-center text-gray-900 dark:text-white bg-[center_top] lg:bg-[left_top] bg-no-repeat bg-cover`}
+      >
+        <div>
+          <Header />
+          </div>
+    <div className="min-h-screen  text-black  dark:text-white px-4 py-12 md:px-12 mb-6 ">
+      <div className="max-w-7xl mx-auto ">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 mt-20 md:mt-32 px-4 md:px-16 ">Tech Stack</h1>
+        <p className="text-lg px-4 md:px-16 mb-12 text-[#808080]/50 dark:text-[#808080]/50">
           The dev tools, apps, devices, and games I use and play.
         </p>
 
@@ -119,6 +128,8 @@ const TechStack = () => {
         <CardGrid title="Games" items={gamesStack} />
       </div>
     </div>
+    <Footer />
+    </section>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Briefcase, Home, Mail, Menu, Pencil, User } from "lucide-react";
+import { Link } from "react-router-dom";
 import FooterGradient from "../assets/FooterGradient.png";
 import logo from "../assets/Logo.png";
 import logoDark from "../assets/LogoDark.png";
@@ -7,10 +8,10 @@ import { useTheme } from "../context/ThemeContext";
 const Footer = () => {
   const { theme, toggleTheme } = useTheme();
   const footerLinks = [
-    { label: "About", href: "#about" },
-    { label: "Work", href: "#work" },
-    { label: "Tech Stack", href: "#blog" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", to: "/about" },
+    { label: "Work", to: "/projects" },
+    { label: "Tech Stack", to: "/tech-stack" },
+    { label: "Contact", to: "/contact" },
   ];
   const elsewhereLinks = [
     { label: "Email", href: "mailto:eihab@example.com" },
@@ -54,12 +55,12 @@ const Footer = () => {
             <ul className="space-y-4 ">
               {footerLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.to}
                     className="hover:underline font-normal text-base "
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
