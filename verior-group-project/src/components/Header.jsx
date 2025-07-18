@@ -35,9 +35,8 @@ const Header = () => {
       <nav
         className="flex items-center justify-between w-full h-auto p-2 md:bg-white/25 md:dark:bg-[#18181d]/30 md:mx-auto mt-8 md:w-[700px] lg:w-[1000px] md:transition-all md:duration-300 md:ease-in-out md:h-[60px] md:rounded-xl md:p-4 md:backdrop-blur-md"
       >
-        <div className='flex items-center gap-10'>
 
-        <div className="bg-none">
+        <div className="bg-none flex items-center gap-10">
           {theme === 'dark' ? (
             <img src={logoDark} alt="Logo" className="w-[39.87px] h-[26px]" />
           ) : ( 
@@ -46,8 +45,8 @@ const Header = () => {
             <img src={logoDark} alt="Logo" className="w-[39.87px] h-[26px] md:hidden" />
             </>
           )}
-        </div>
-        <div className="hidden md:flex items-center space-x-6 font-medium text-[#181818]  dark:text-[#c5c5c5]">
+       
+        <div className="hidden md:flex items-center gap-6 lg:gap-10 font-medium text-[#181818]  dark:text-[#c5c5c5]">
           {menu.map((item) =>
             item.children ? (
               <div className="relative" key={item.label}>
@@ -83,6 +82,9 @@ const Header = () => {
               </Link>
             )
           )}
+          </div>
+           </div>
+        <div className="items-center gap-4 lg:gap-6 hidden md:flex">
           <Link to="https://linkedin.com" target="_blank" className="">
             {theme === 'dark' ? (
               <img src={LinkedinDark} alt="LinkedIn" className="w-6 h-6" />
@@ -100,11 +102,12 @@ const Header = () => {
               <img src={github} alt="github" className="w-6 h-6 " />
             )}
           </a>
-    
-          <button onClick={toggleTheme} className=" transition" aria-label="Toggle theme">
+          <span className="flex -ml-[6px] items-center justify-center h-6 px-2 text-lg text-[#00000042] dark:text-[#FFFFFF40] select-none">
+            |
+          </span>
+          <button onClick={toggleTheme} className="-ml-[6px] transition" aria-label="Toggle theme">
             {theme === 'dark' ? <Sun className="w-6 h-6" /> : <Moon className="w-6 h-6" />}
           </button>
-        </div>
         </div>
       </nav>
     </header>
