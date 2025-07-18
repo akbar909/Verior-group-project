@@ -1,6 +1,6 @@
 import HeaderGradient from "../assets/HeaderGradient.png";
 import Header from "./Header";
-import heroImage from "../assets/heroImage.png";
+import heroImage from "../assets/HeroImage.png";
 const Hero = () => {
   return (
     <section
