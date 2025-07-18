@@ -1,10 +1,9 @@
-import NotebookCard from "../components/NotebookCard";
-import image1 from "../assets/image.png";
-import image2 from "../assets/image1.png";
 import { Link } from "react-router-dom";
 import HeaderGradient from "../assets/HeaderGradient.png";
-import Header from '../components/Header';
+import image1 from "../assets/image.png";
+import image2 from "../assets/image1.png";
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 const notebooks = [
 	{
 		id: "1",
@@ -69,14 +68,14 @@ export default function NotebookPage() {
 
 						<div className="bg-gray-900 rounded-lg overflow-hidden inline-block w-full max-w-[504px]">
 							<div className="relative">
-								<Link to="/notebook/2">
-									<img
-										src="./src/assets/image1.png"
-										alt="Highway intersection aerial view"
-										className="w-full max-w-[504px] h-auto aspect-square object-cover rounded-[22px]"
-										style={{ opacity: 1, borderWidth: '1px', borderStyle: 'solid', borderColor: '#383737', background: '#151515', transform: 'rotate(0deg)' }}
-									/>
-								</Link>
+						<Link to="/notebook/2">
+							<img
+								src={image2}
+								alt="Highway intersection aerial view"
+								className="w-full max-w-[504px] h-auto aspect-square object-cover rounded-[22px]"
+								style={{ opacity: 1, borderWidth: '1px', borderStyle: 'solid', borderColor: '#383737', background: '#151515', transform: 'rotate(0deg)' }}
+							/>
+						</Link>
 								<div className="absolute bottom-4 left-4 right-4">
 									<h3
 										className="font-inter font-semibold text-[20px] sm:text-[28px] md:text-[32px] leading-[1] text-white"
@@ -111,14 +110,14 @@ export default function NotebookPage() {
 
 						<div className="bg-gray-900 rounded-lg overflow-hidden inline-block w-full max-w-[504px]">
 							<div className="relative">
-								<Link to="/notebook/1">
-									<img
-										src="./src/assets/image.png"
-										alt="Highway intersection aerial view"
-										className="w-full max-w-[504px] h-auto aspect-square object-cover rounded-[22px]"
-										style={{ opacity: 1, borderWidth: '1px', borderStyle: 'solid', borderColor: '#383737', background: '#151515', transform: 'rotate(0deg)' }}
-									/>
-								</Link>
+						<Link to="/notebook/1">
+							<img
+								src={image1}
+								alt="Highway intersection aerial view"
+								className="w-full max-w-[504px] h-auto aspect-square object-cover rounded-[22px]"
+								style={{ opacity: 1, borderWidth: '1px', borderStyle: 'solid', borderColor: '#383737', background: '#151515', transform: 'rotate(0deg)' }}
+							/>
+						</Link>
 								<div className="absolute bottom-4 left-4 right-4">
 									<h3
 										className="font-inter font-semibold text-[20px] sm:text-[28px] md:text-[32px] leading-[1] text-white"

@@ -1,68 +1,119 @@
-import React from 'react';
 import HeaderGradient from "../assets/HeaderGradient.png";
-import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
+import acorigins from '../assets/tech/acorigins.jpg';
+import airpods from '../assets/tech/airpods.jpg';
+import ajazz from '../assets/tech/ajazz.webp';
+import amie from '../assets/tech/amie.avif';
+import applex from '../assets/tech/applex.jpg';
+import books from '../assets/tech/books.jpg';
+import brawl from '../assets/tech/brawl.png';
+import chatgpt from '../assets/tech/chatgpt.png';
+import chrome from '../assets/tech/chrome.jpg';
+import discord from '../assets/tech/discord.png';
+import duolingo from '../assets/tech/duolingo.png';
+import eldenring from '../assets/tech/eldenring.jpg';
+import expo from '../assets/tech/expo.png';
+import figma from '../assets/tech/figma.png';
+import forza from '../assets/tech/forza.jpg';
+import framer from '../assets/tech/framer.png';
+import gears from '../assets/tech/gears.jpg';
+import github from '../assets/tech/github.png';
+import gta from '../assets/tech/gta.jpg';
+import lagkapten from '../assets/tech/lagkapten.jpg';
+import logitech from '../assets/tech/logitech.jpg';
+import macbookpro2017 from '../assets/tech/macbookpro2017.jpg';
+import markus from '../assets/tech/markus.jpg';
+import modern from '../assets/tech/modern.jpg';
+import msi from '../assets/tech/msi.jpg';
+import nextjs from '../assets/tech/nextjs.jpg';
+import notion from '../assets/tech/notion.png';
+import pocketcasts from '../assets/tech/pocketcasts.jpg';
+import raycast from '../assets/tech/raycast.png';
+import rdr from '../assets/tech/RDR.jpg';
+import reacthook from '../assets/tech/reacthook.png';
+import reactquery from '../assets/tech/reactquery.png';
+import sanity from '../assets/tech/sanity.png';
+import sekiro from '../assets/tech/sekiro.jpg';
+import skyrim from '../assets/tech/skyrim.jpg';
+import slack from '../assets/tech/slack.png';
+import spark from '../assets/tech/spark.jpg';
+import spotify from '../assets/tech/spotify.png';
+import stardew from '../assets/tech/stardew.jpg';
+import subbi from '../assets/tech/subbi.jpg';
+import tailwind from '../assets/tech/tailwind.png';
+import todoist from '../assets/tech/todoist.png';
+import twitch from '../assets/tech/twitch.png';
+import typescript from '../assets/tech/typescript.png';
+import vercel from '../assets/tech/vercel.png';
+import vscode from '../assets/tech/vscode.png';
+import warp from '../assets/tech/warp.png';
+import witcher from '../assets/tech/witcher.jpg';
+import xbox from '../assets/tech/xbox.jpg';
+import zod from '../assets/tech/zod.jpg';
+import zustand from '../assets/tech/zustand.png';
+
 const techStack = [
-  { name: 'Figma', icon: '/src/assets/tech/figma.png', label: 'Design' },
-  { name: 'Next.js', icon: '/src/assets/tech/nextjs.jpg', label: 'Web Framework' },
-  { name: 'TailwindCSS', icon: '/src/assets/tech/tailwind.png', label: 'CSS' },
-  { name: 'GitHub', icon: '/src/assets/tech/github.png', label: 'Version Control' },
-  { name: 'Warp', icon: '/src/assets/tech/warp.png', label: 'Terminal' },
-  { name: 'Vercel', icon: '/src/assets/tech/vercel.png', label: 'Deployment' },
-  { name: 'VSCode', icon: '/src/assets/tech/vscode.png', label: 'Editor' },
-  { name: 'Framer Motion', icon: '/src/assets/tech/framer.png', label: 'Animation' },
-  { name: 'TypeScript', icon: '/src/assets/tech/typescript.png', label: 'Language' },
-  { name: 'React Hook Form', icon: '/src/assets/tech/reacthook.png', label: 'Library' },
-  { name: 'React Query', icon: '/src/assets/tech/reactquery.png', label: 'Server State' },
-  { name: 'Zustand', icon: '/src/assets/tech/zustand.png', label: 'Global State' },
-  { name: 'Zod', icon: '/src/assets/tech/zod.jpg', label: 'Validation' },
-  { name: 'Expo', icon: '/src/assets/tech/expo.png', label: 'Mobile Framework' },
-  { name: 'Sanity', icon: '/src/assets/tech/sanity.png', label: 'Headless CMS' },
+  { name: 'Figma', icon: figma, label: 'Design' },
+  { name: 'Next.js', icon: nextjs, label: 'Web Framework' },
+  { name: 'TailwindCSS', icon: tailwind, label: 'CSS' },
+  { name: 'GitHub', icon: github, label: 'Version Control' },
+  { name: 'Warp', icon: warp, label: 'Terminal' },
+  { name: 'Vercel', icon: vercel, label: 'Deployment' },
+  { name: 'VSCode', icon: vscode, label: 'Editor' },
+  { name: 'Framer Motion', icon: framer, label: 'Animation' },
+  { name: 'TypeScript', icon: typescript, label: 'Language' },
+  { name: 'React Hook Form', icon: reacthook, label: 'Library' },
+  { name: 'React Query', icon: reactquery, label: 'Server State' },
+  { name: 'Zustand', icon: zustand, label: 'Global State' },
+  { name: 'Zod', icon: zod, label: 'Validation' },
+  { name: 'Expo', icon: expo, label: 'Mobile Framework' },
+  { name: 'Sanity', icon: sanity, label: 'Headless CMS' },
 ];
 
 const appsStack = [
-  { name: 'Raycast', icon: '/src/assets/tech/raycast.png', label: 'Launcher' },
-  { name: 'Todoist', icon: '/src/assets/tech/todoist.png', label: 'Productivity' },
-  { name: 'Notion', icon: '/src/assets/tech/notion.png', label: 'Notes' },
-  { name: 'Amie', icon: '/src/assets/tech/amie.avif', label: 'Calendar' },
-  { name: 'ChatGPT', icon: '/src/assets/tech/chatgpt.png', label: 'Productivity' },
-  { name: 'Discord', icon: '/src/assets/tech/discord.png', label: 'Communication' },
-  { name: 'Duolingo', icon: '/src/assets/tech/duolingo.png', label: 'Education' },
-  { name: 'Books', icon: '/src/assets/tech/books.jpg', label: 'Education' },
-  { name: 'Chrome', icon: '/src/assets/tech/chrome.jpg', label: 'Browser' },
-  { name: 'Spark', icon: '/src/assets/tech/spark.jpg', label: 'Email' },
-  { name: 'Spotify', icon: '/src/assets/tech/spotify.png', label: 'Music' },
-  { name: 'Slack', icon: '/src/assets/tech/slack.png', label: 'Communication' },
-  { name: 'Twitch', icon: '/src/assets/tech/twitch.png', label: 'Entertainment' },
-  { name: 'Pocketcasts', icon: '/src/assets/tech/pocketcasts.jpg', label: 'Podcast' },
-  { name: 'Subbi', icon: '/src/assets/tech/subbi.jpg', label: 'Utility' },
+  { name: 'Raycast', icon: raycast, label: 'Launcher' },
+  { name: 'Todoist', icon: todoist, label: 'Productivity' },
+  { name: 'Notion', icon: notion, label: 'Notes' },
+  { name: 'Amie', icon: amie, label: 'Calendar' },
+  { name: 'ChatGPT', icon: chatgpt, label: 'Productivity' },
+  { name: 'Discord', icon: discord, label: 'Communication' },
+  { name: 'Duolingo', icon: duolingo, label: 'Education' },
+  { name: 'Books', icon: books, label: 'Education' },
+  { name: 'Chrome', icon: chrome, label: 'Browser' },
+  { name: 'Spark', icon: spark, label: 'Email' },
+  { name: 'Spotify', icon: spotify, label: 'Music' },
+  { name: 'Slack', icon: slack, label: 'Communication' },
+  { name: 'Twitch', icon: twitch, label: 'Entertainment' },
+  { name: 'Pocketcasts', icon: pocketcasts, label: 'Podcast' },
+  { name: 'Subbi', icon: subbi, label: 'Utility' },
 ];
 
 const hardwareStack = [
-  { name: 'MacBook Pro 2017', icon: '/src/assets/tech/macbookpro2017.jpg' },
-  { name: 'Logitech MX Master 2S', icon: '/src/assets/tech/logitech.jpg' },
-  { name: 'MSI G24-C4', icon: '/src/assets/tech/msi.jpg' },
-  { name: 'Ajazz AK33', icon: '/src/assets/tech/ajazz.webp' },
-  { name: 'iPhone X', icon: '/src/assets/tech/applex.jpg' },
-  { name: 'AirPods 3', icon: '/src/assets/tech/airpods.jpg' },
-  { name: 'Xbox One X', icon: '/src/assets/tech/xbox.jpg' },
-  { name: 'Ikea LAGKAPTEN / OLOV', icon: '/src/assets/tech/lagkapten.jpg' },
-  { name: 'Ikea Marcus', icon: '/src/assets/tech/markus.jpg' },
+  { name: 'MacBook Pro 2017', icon: macbookpro2017 },
+  { name: 'Logitech MX Master 2S', icon: logitech },
+  { name: 'MSI G24-C4', icon: msi },
+  { name: 'Ajazz AK33', icon: ajazz },
+  { name: 'iPhone X', icon: applex },
+  { name: 'AirPods 3', icon: airpods },
+  { name: 'Xbox One X', icon: xbox },
+  { name: 'Ikea LAGKAPTEN / OLOV', icon: lagkapten },
+  { name: 'Ikea Marcus', icon: markus },
 ];
 
 const gamesStack = [
-  { name: 'Elden Ring', icon: '/src/assets/tech/eldenring.jpg' },
-  { name: 'Sekiro: Shadows Die Twice', icon: '/src/assets/tech/sekiro.jpg' },
-  { name: 'Stardew Valley', icon: '/src/assets/tech/stardew.jpg' },
-  { name: 'Forza Horizon 5', icon: '/src/assets/tech/forza.jpg' },
-  { name: 'GTA Online', icon: '/src/assets/tech/gta.jpg' },
-  { name: 'The Witcher 3', icon: '/src/assets/tech/witcher.jpg' },
-  { name: 'CoD Modern Warfare', icon: '/src/assets/tech/modern.jpg' },
-  { name: 'Brawl Stars', icon: '/src/assets/tech/brawl.png' },
-  { name: 'Skyrim', icon: '/src/assets/tech/skyrim.jpg' },
-  { name: 'Gears of War', icon: '/src/assets/tech/gears.jpg' },
-  { name: 'AC Origins', icon: '/src/assets/tech/acorigins.jpg' },
-  { name: 'RDR 2', icon: '/src/assets/tech/RDR.jpg' },
+  { name: 'Elden Ring', icon: eldenring },
+  { name: 'Sekiro: Shadows Die Twice', icon: sekiro },
+  { name: 'Stardew Valley', icon: stardew },
+  { name: 'Forza Horizon 5', icon: forza },
+  { name: 'GTA Online', icon: gta },
+  { name: 'The Witcher 3', icon: witcher },
+  { name: 'CoD Modern Warfare', icon: modern },
+  { name: 'Brawl Stars', icon: brawl },
+  { name: 'Skyrim', icon: skyrim },
+  { name: 'Gears of War', icon: gears },
+  { name: 'AC Origins', icon: acorigins },
+  { name: 'RDR 2', icon: rdr },
 ];
 
 const CardGrid = ({ title, items }) => (
