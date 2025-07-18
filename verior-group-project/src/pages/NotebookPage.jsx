@@ -37,7 +37,7 @@ export default function NotebookPage() {
 			
 			{/* Main Content */}
 			<div className="lg:w-full min-h-screen mt-20 md:mt-32 px-4 md:px-8 xl:px-36 2xl:px-64 text-black dark:text-white">
-				<main className="max-w-4xl mx-auto px-6 py-16">
+				<main className="max-w-[990px] mx-auto ">
 					{/* Hero Section */}
 					<div className="mb-16">
 						<h1 className="font-inter font-bold text-[40px] sm:text-[60px] md:text-[80px] leading-[1] align-bottom mb-4">Notebook</h1>

@@ -19,7 +19,7 @@ const Projects = () => {
       <div>
         <Header />
       </div>
-      <div className="mt-20 md:mt-32 px-4 md:px-8  xl:px-36 2xl:px-64  items-center mb-6 container">
+      <div className="mt-20 md:mt-32 min-h-screen px-4 md:px-8  xl:px-36 2xl:px-64  items-center mb-6 container">
         <h2 className="text-4xl md:text-5xl font-bold mb-2">Projects</h2>
         <p className="text-[#80808080] text-lg mb-12">Projects and ideas I’ve worked on</p>
  <div className="relative mb-12">

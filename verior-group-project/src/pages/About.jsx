@@ -17,8 +17,8 @@ const About = () => {
           <div>
             <Header />
           </div>
-    <div className="min-h-screen mt-20 md:mt-32 dark:text-gray-400 text-gray-500 px-8 py-10 md:px-24 container">
-      <div className="max-w-5xl mx-auto">
+    <div className="min-h-screen mt-20 md:mt-32 dark:text-gray-400 text-gray-500 px-8 md:px-24 mb-6 container">
+      <div className="max-w-[990px] container mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white text-black">A little bit about me</h1>
         <p className="dark:text-gray-400 text-black font-bold text-lg mb-12">Who I am and what I do.</p>
 

@@ -18,8 +18,8 @@ export default function ContactPage() {
             <Header />
           </div>
 
-    <section className="min-h-screen w-full flex flex-col items-center justify-center mt-20 md:mt-32 px-4 md:px-16 mb-6">
-      <div className="w-full max-w-2xl">
+    <section className="min-h-screen w-full flex flex-col items-center justify-center mt-24 md:mt-40 px-4 md:px-12 xl:px-36 2xl:px-64 mb-6">
+      <div className="w-full max-w-[990px]">
         <h1
           className="font-inter font-bold text-[80px] leading-[1] align-bottom mb-2 text-left text-black dark:text-white"
           

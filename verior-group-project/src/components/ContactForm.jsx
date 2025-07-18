@@ -18,7 +18,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-neutral-900 rounded-xl shadow-lg p-0 overflow-hidden">
+    <div className="bg-neutral-900 rounded-xl shadow-lg p-0 overflow-hidden mx-auto justify-center items-center container">
       {/* Window bar */}
       <div
         className="relative"
