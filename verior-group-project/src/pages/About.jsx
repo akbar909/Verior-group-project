@@ -19,8 +19,8 @@ const About = () => {
           </div>
     <div className="min-h-screen mt-20 md:mt-32 dark:text-gray-400 text-gray-500 px-8 md:px-24 mb-6 container">
       <div className="max-w-[990px] container mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white text-black">A little bit about me</h1>
-        <p className="dark:text-gray-400 text-black font-bold text-lg mb-12">Who I am and what I do.</p>
+        <h1 className="text-5xl lg:text-[80px] font-bold mb-4 dark:text-white text-black">A little bit about me</h1>
+        <p className="dark:text-gray-400 text-black font-bold text-base lg:text-2xl mb-12">Who I am and what I do.</p>
 
        
         <div className="relative mb-12">

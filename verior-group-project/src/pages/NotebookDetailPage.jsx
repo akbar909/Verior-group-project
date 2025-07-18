@@ -62,7 +62,7 @@ export default function NotebookDetailPage() {
       {(notebook.id === "1" || notebook.id === "2") && (
         <>
           <div className="flex flex-col justify-center mb-6 w-full max-w-4xl mx-auto px-4 sm:px-8 md:px-12">
-            <h1 className="font-inter font-bold text-[40px] sm:text-[60px] md:text-[80px] leading-[1] align-bottom mb-2 text-black dark:text-white" style={{ letterSpacing: '0em' }}>
+            <h1 className="font-inter font-bold text-5xl lg:text-[80px] leading-[1] align-bottom mb-2 text-black dark:text-white" style={{ letterSpacing: '0em' }}>
               Ultimate guide to the App Router in Next.js 13
             </h1>
             <p className="font-inter font-normal text-[16px] sm:text-[20px] md:text-[24px] leading-[1] text-gray-500" style={{ letterSpacing: '-0.019em' }}>

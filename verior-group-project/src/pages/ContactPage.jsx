@@ -18,16 +18,16 @@ export default function ContactPage() {
             <Header />
           </div>
 
-    <section className="min-h-screen w-full flex flex-col items-center justify-center mt-24 md:mt-40 px-4 md:px-12 xl:px-36 2xl:px-64 mb-6">
-      <div className="w-full max-w-[990px]">
+    <section className=" w-full flex flex-col items-center justify-center mt-24 md:mt-32 px-4 md:px-12 xl:px-36 2xl:px-64 mb-6">
+      <div className="w-full lg:max-w-[990px]">
         <h1
-          className="font-inter font-bold text-[80px] leading-[1] align-bottom mb-2 text-left text-black dark:text-white"
+          className="font-inter font-bold lg:text-[80px] text-5xl leading-[1] align-bottom mb-2 text-black dark:text-white"
           
         >
           Get in touch
         </h1>
         <p
-          className="font-inter font-normal text-[24px] leading-[1] mb-8 text-left"
+          className="font-inter font-normal text-[24px] leading-[1] mb-8 "
           style={{ letterSpacing: '-0.019em', color: '#80808078' }}
         >
           Let's build something awesome.

@@ -77,19 +77,19 @@ const Bookshelf = () => {
       </div>
 
     <div className="min-h-screen mb-6  text-black  dark:text-white mt-20 md:mt-32 px-4 md:px-8  xl:px-36 2xl:px-64 transition-colors ">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2">Bookshelf</h1>
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-5xl lg:text-[80px] font-bold mb-2">Bookshelf</h1>
        <p className="text-customgray50 mb-12 text-lg">
   Books and pieces of wisdom I’ve enjoyed reading.
 </p>
 
 
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 lg:gap-12">
           {bookCovers.map((src, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded shadow-lg hover:scale-105 transition-transform "
+              className="overflow-hidden rounded-md shadow-lg hover:scale-105 transition-transform "
             >
               <img
                 src={src}

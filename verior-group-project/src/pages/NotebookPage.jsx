@@ -40,7 +40,7 @@ export default function NotebookPage() {
 				<main className="max-w-[990px] mx-auto ">
 					{/* Hero Section */}
 					<div className="mb-16">
-						<h1 className="font-inter font-bold text-[40px] sm:text-[60px] md:text-[80px] leading-[1] align-bottom mb-4">Notebook</h1>
+						<h1 className="font-inter font-bold text-5xl lg:text-[80px] leading-[1] align-bottom mb-4">Notebook</h1>
 						<p
 							className="font-inter font-normal text-[16px] sm:text-[20px] md:text-[24px] leading-[1] mb-0"
 							style={{ letterSpacing: '-0.019em', color: '#80808078' }}

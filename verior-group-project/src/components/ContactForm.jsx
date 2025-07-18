@@ -18,12 +18,12 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-neutral-900 rounded-xl shadow-lg p-0 overflow-hidden mx-auto justify-center items-center container">
+    <div className="bg-neutral-900 rounded-xl shadow-lg p-0 overflow-hidden mx-auto justify-center items-center w-full max-w-[700px]">
       {/* Window bar */}
       <div
-        className="relative"
+        className="relative w-full"
         style={{
-          width: '695px',
+          maxWidth: '700px',
           height: '54px',
           borderTopLeftRadius: '12px',
           borderTopRightRadius: '12px',
@@ -62,8 +62,12 @@ export default function ContactForm() {
           New message
         </span>
       </div>
-      <form onSubmit={handleSubmit} className="space-y-6 p-8 bg-[#181818] rounded-b-[12px]" style={{ width: '695px', borderBottomLeftRadius: '12px', borderBottomRightRadius: '12px', border: '1px solid #222', borderTop: 'none' }}>
-        <div>
+      <form
+        onSubmit={handleSubmit}
+        className="space-y-6 p-6 sm:p-8 bg-[#181818] rounded-b-[12px] w-full"
+        style={{ maxWidth: '700px', borderBottomLeftRadius: '12px', borderBottomRightRadius: '12px', border: '1px solid #222', borderTop: 'none' }}
+      >
+        <div className="w-full">
           <label htmlFor="email" className="block text-gray-300 mb-1 font-medium">Email:</label>
           <input
             id="email"
@@ -76,7 +80,7 @@ export default function ContactForm() {
             required
           />
         </div>
-        <div>
+        <div className="w-full">
           <label htmlFor="name" className="block text-gray-300 mb-1 font-medium">Name:</label>
           <input
             id="name"
@@ -89,7 +93,7 @@ export default function ContactForm() {
             required
           />
         </div>
-        <div>
+        <div className="w-full">
           <label htmlFor="subject" className="block text-gray-300 mb-1 font-medium">Subject:</label>
           <input
             id="subject"
@@ -101,7 +105,7 @@ export default function ContactForm() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="w-full">
           <label htmlFor="message" className="block text-gray-300 mb-1 font-medium">Write your message here</label>
           <textarea
             id="message"
@@ -114,7 +118,7 @@ export default function ContactForm() {
             required
           />
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end w-full">
           <button
             type="submit"
             className="bg-neutral-700 hover:bg-neutral-600 text-white px-6 py-2 rounded-lg font-semibold transition"

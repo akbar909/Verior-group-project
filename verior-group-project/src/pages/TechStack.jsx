@@ -168,7 +168,7 @@ const TechStack = () => {
           </div>
     <div className="min-h-screen  text-black  dark:text-white px-4 md:px-12 mb-6 ">
       <div className="max-w-6xl mx-auto ">
-        <h1 className="text-4xl md:text-5xl font-bold mb-2 mt-20 md:mt-32 px-4 md:px-16">Tech Stack</h1>
+        <h1 className="lg:text-[80px] text-5xl font-bold mb-2 mt-20 md:mt-32 px-4 md:px-16">Tech Stack</h1>
         <p className="text-lg px-4 md:px-16 mb-12 text-[#808080]/50 dark:text-[#808080]/50">
           The dev tools, apps, devices, and games I use and play.
         </p>

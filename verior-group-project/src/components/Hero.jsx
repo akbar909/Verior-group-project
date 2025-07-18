@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="mt-72 md:mt-40 px-4 md:px-8  xl:px-36 2xl:px-64 flex flex-row items-center container">
         <div>
         <div className="flex flex-col gap-4">
-          <h1 className="text-5xl lg:text-7xl font-extrabold text-[#808080] ">
+          <h1 className="text-5xl lg:text-[80px] font-extrabold text-[#808080] ">
             Hi 👋{" "}
             <span>
               {" "}
