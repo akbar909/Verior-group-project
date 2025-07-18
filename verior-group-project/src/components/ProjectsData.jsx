@@ -1,6 +1,6 @@
 
 import Subbi from '../assets/Subbi.png';
-import Iphone14 from '../assets/Iphone14.png'
+import Iphone14 from '../assets/iphone14.png'
 import Arrow from '../assets/ArrowRight.png'
 import ReactDoc from '../assets/ReactDocs.png'
 import IpadPencil from '../assets/IpadPencil.png'
