@@ -1,36 +1,64 @@
-import React from 'react';
+import book1 from '../assets/books/book1.png';
+import book10 from '../assets/books/book10.jpg';
+import book11 from '../assets/books/book11.jpg';
+import book12 from '../assets/books/book12.jpg';
+import book13 from '../assets/books/book13.jpg';
+import book14 from '../assets/books/book14.jpg';
+import book15 from '../assets/books/book15.jpg';
+import book16 from '../assets/books/book16.jpg';
+import book17 from '../assets/books/book17.png';
+import book18 from '../assets/books/book18.jpg';
+import book19 from '../assets/books/book19.jpg';
+import book2 from '../assets/books/book2.jpg';
+import book20 from '../assets/books/book20.jpg';
+import book21 from '../assets/books/book21.jpg';
+import book22 from '../assets/books/book22.png';
+import book23 from '../assets/books/book23.jpg';
+import book24 from '../assets/books/book24.jpg';
+import book25 from '../assets/books/book25.png';
+import book26 from '../assets/books/book26.jpg';
+import book27 from '../assets/books/book27.jpg';
+import book28 from '../assets/books/book28.jpg';
+import book3 from '../assets/books/book3.jpg';
+import book4 from '../assets/books/book4.jpg';
+import book5 from '../assets/books/book5.jpg';
+import book6 from '../assets/books/book6.jpg';
+import book7 from '../assets/books/book7.jpg';
+import book8 from '../assets/books/book8.jpg';
+import book9 from '../assets/books/book9.png';
 import HeaderGradient from "../assets/HeaderGradient.png";
-import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
+
 const bookCovers = [
-  '/src/assets/books/book1.png',
-  '/src/assets/books/book2.jpg',
-  '/src/assets/books/book3.jpg',
-  '/src/assets/books/book4.jpg',
-  '/src/assets/books/book5.jpg',
-  '/src/assets/books/book6.jpg',
-  '/src/assets/books/book7.jpg',
-  '/src/assets/books/book8.jpg',
-  '/src/assets/books/book9.png',
-  '/src/assets/books/book10.jpg',
-  '/src/assets/books/book11.jpg',
-  '/src/assets/books/book12.jpg',
-  '/src/assets/books/book13.jpg',
-  '/src/assets/books/book14.jpg',
-  '/src/assets/books/book15.jpg',
-  '/src/assets/books/book16.jpg',
-  '/src/assets/books/book17.png',
-  '/src/assets/books/book18.jpg',
-  '/src/assets/books/book19.jpg',
-  '/src/assets/books/book20.jpg',
-  '/src/assets/books/book21.jpg',
-  '/src/assets/books/book22.png',
-  '/src/assets/books/book23.jpg',
-  '/src/assets/books/book24.jpg',
-  '/src/assets/books/book25.png',
-  '/src/assets/books/book26.jpg',
-  '/src/assets/books/book27.jpg',
-  '/src/assets/books/book28.jpg',
+  book1,
+  book2,
+  book3,
+  book4,
+  book5,
+  book6,
+  book7,
+  book8,
+  book9,
+  book10,
+  book11,
+  book12,
+  book13,
+  book14,
+  book15,
+  book16,
+  book17,
+  book18,
+  book19,
+  book20,
+  book21,
+  book22,
+  book23,
+  book24,
+  book25,
+  book26,
+  book27,
+  book28,
 ];
 
 const Bookshelf = () => {
@@ -39,7 +67,7 @@ const Bookshelf = () => {
     style={{
         backgroundImage: `url(${HeaderGradient})`,
         backgroundPosition: "top center",
-				 backgroundSize: "100% 600px",
+         backgroundSize: "100% 600px",
         
       }}
       className={`bg-[#fbfbfb] dark:bg-[#131313] flex-1 flex flex-col items-center justify-center text-gray-900 dark:text-white bg-[center_top] lg:bg-[left_top] bg-no-repeat bg-cover`}
