@@ -4,7 +4,8 @@ import Home from './pages/Home'
 import {BrowserRouter ,Route, Routes} from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects'
-import { fromJSON } from 'postcss'
+import Bookshelf from './pages/Bookshelf'
+import TechStack from './pages/TechStack'
 const App = () => {
   return (
      <BrowserRouter>
@@ -13,6 +14,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/bookshelf" element={<Bookshelf />} />
+        <Route path="/tech-stack" element={<TechStack />} />
       </Routes>
     </BrowserRouter>
   )
